@@ -1,0 +1,181 @@
+﻿id,categoria_real,categoria_predicha,confianza,estado
+3,limpieza,limpieza,0.958,automático
+11,seguridad,seguridad,0.6563,revisión manual
+17,salud,salud,0.7458,automático
+26,salud,salud,0.7169,automático
+31,salud,salud,0.7615,automático
+35,agua,agua,0.7581,automático
+42,salud,seguridad,0.6225,revisión manual
+43,agua,agua,0.971,automático
+44,salud,seguridad,0.7437,automático
+50,agua,agua,0.5084,revisión manual
+56,agua,agua,0.8161,automático
+57,salud,salud,0.9318,automático
+58,salud,salud,0.8391,automático
+60,salud,salud,0.9552,automático
+62,seguridad,seguridad,0.9942,automático
+64,agua,agua,0.9745,automático
+66,limpieza,limpieza,0.999,automático
+67,agua,agua,0.9955,automático
+73,salud,salud,0.7376,automático
+76,agua,agua,0.9514,automático
+79,seguridad,seguridad,0.8751,automático
+80,salud,seguridad,0.7723,automático
+82,seguridad,seguridad,0.9498,automático
+84,agua,agua,0.9266,automático
+85,agua,agua,0.9345,automático
+89,limpieza,limpieza,0.993,automático
+90,agua,agua,0.9028,automático
+91,seguridad,seguridad,0.9753,automático
+102,limpieza,limpieza,0.984,automático
+103,salud,salud,0.6375,revisión manual
+111,agua,agua,0.9477,automático
+113,seguridad,seguridad,0.741,automático
+115,seguridad,seguridad,0.9957,automático
+118,seguridad,seguridad,0.7241,automático
+121,agua,agua,0.8783,automático
+126,salud,salud,0.7453,automático
+128,agua,agua,0.9964,automático
+130,limpieza,limpieza,0.8287,automático
+133,seguridad,seguridad,0.8297,automático
+139,limpieza,limpieza,0.9627,automático
+140,seguridad,seguridad,0.5664,revisión manual
+152,salud,salud,0.9114,automático
+153,seguridad,seguridad,0.9096,automático
+157,limpieza,agua,0.4941,revisión manual
+163,salud,salud,0.9114,automático
+165,seguridad,seguridad,0.9054,automático
+167,salud,salud,0.9872,automático
+174,agua,agua,0.9522,automático
+178,seguridad,seguridad,0.9761,automático
+181,seguridad,seguridad,0.7132,automático
+190,salud,seguridad,0.6,revisión manual
+195,salud,salud,0.4114,revisión manual
+197,agua,agua,0.7672,automático
+202,salud,salud,0.643,revisión manual
+207,limpieza,limpieza,0.9747,automático
+210,limpieza,limpieza,0.9913,automático
+218,seguridad,seguridad,0.7483,automático
+223,limpieza,limpieza,0.9301,automático
+224,agua,agua,0.7588,automático
+225,seguridad,seguridad,0.9677,automático
+227,seguridad,seguridad,0.9586,automático
+229,seguridad,seguridad,0.9768,automático
+232,seguridad,seguridad,0.8787,automático
+236,seguridad,seguridad,0.5607,revisión manual
+237,salud,salud,0.9397,automático
+238,salud,salud,0.5535,revisión manual
+242,agua,agua,0.7596,automático
+245,salud,seguridad,0.6219,revisión manual
+252,limpieza,limpieza,0.97,automático
+253,agua,agua,0.9835,automático
+254,salud,salud,0.8076,automático
+255,seguridad,seguridad,0.8994,automático
+256,limpieza,limpieza,0.9414,automático
+260,salud,seguridad,0.5644,revisión manual
+261,limpieza,limpieza,0.9784,automático
+262,salud,salud,0.7955,automático
+264,agua,agua,0.9886,automático
+266,salud,salud,0.7472,automático
+273,limpieza,limpieza,0.9259,automático
+275,limpieza,limpieza,0.8633,automático
+276,agua,agua,0.9185,automático
+278,seguridad,seguridad,0.986,automático
+283,agua,agua,0.992,automático
+285,limpieza,limpieza,0.8774,automático
+289,limpieza,limpieza,0.6222,revisión manual
+290,limpieza,limpieza,0.9223,automático
+297,limpieza,limpieza,0.9905,automático
+307,salud,salud,0.7995,automático
+311,limpieza,limpieza,0.8223,automático
+313,salud,salud,0.5831,revisión manual
+315,agua,agua,0.9457,automático
+316,limpieza,limpieza,0.9925,automático
+318,agua,agua,0.981,automático
+322,seguridad,salud,0.5724,revisión manual
+324,limpieza,limpieza,0.9482,automático
+328,salud,salud,0.8517,automático
+331,limpieza,limpieza,0.9517,automático
+335,limpieza,limpieza,0.9946,automático
+337,agua,agua,0.9427,automático
+339,agua,agua,0.7977,automático
+346,seguridad,seguridad,0.8153,automático
+350,agua,agua,0.9143,automático
+352,limpieza,limpieza,0.989,automático
+354,agua,agua,0.9129,automático
+357,limpieza,limpieza,0.9635,automático
+359,agua,agua,0.8061,automático
+365,agua,agua,0.9684,automático
+369,seguridad,seguridad,0.9399,automático
+372,agua,agua,0.9897,automático
+375,seguridad,seguridad,0.7496,automático
+376,seguridad,seguridad,0.8699,automático
+379,salud,salud,0.7652,automático
+380,limpieza,limpieza,0.9917,automático
+382,agua,agua,0.9831,automático
+384,limpieza,limpieza,0.7895,automático
+397,limpieza,limpieza,0.9703,automático
+398,salud,salud,0.6838,revisión manual
+399,limpieza,limpieza,0.9917,automático
+406,limpieza,limpieza,0.996,automático
+407,seguridad,seguridad,0.9575,automático
+411,salud,salud,0.7152,automático
+413,seguridad,seguridad,0.6005,revisión manual
+414,salud,salud,0.9915,automático
+417,seguridad,seguridad,0.8983,automático
+418,seguridad,seguridad,0.984,automático
+420,agua,agua,0.7646,automático
+431,limpieza,limpieza,0.9763,automático
+436,seguridad,seguridad,0.8833,automático
+438,salud,salud,0.8168,automático
+443,seguridad,salud,0.5954,revisión manual
+450,agua,agua,0.9434,automático
+451,agua,agua,0.9743,automático
+452,seguridad,seguridad,0.9662,automático
+461,agua,agua,0.7957,automático
+464,seguridad,seguridad,0.9668,automático
+466,salud,salud,0.9804,automático
+467,seguridad,seguridad,0.8873,automático
+468,salud,salud,0.9691,automático
+475,seguridad,seguridad,0.8707,automático
+477,limpieza,limpieza,0.9372,automático
+478,salud,seguridad,0.5453,revisión manual
+479,agua,agua,0.9575,automático
+486,salud,salud,0.7811,automático
+490,limpieza,limpieza,0.9862,automático
+494,seguridad,seguridad,0.882,automático
+495,agua,agua,0.9234,automático
+496,agua,agua,0.9199,automático
+497,seguridad,seguridad,0.699,revisión manual
+498,seguridad,seguridad,0.8888,automático
+499,seguridad,seguridad,0.9746,automático
+500,seguridad,seguridad,0.7953,automático
+501,seguridad,seguridad,0.9635,automático
+502,agua,agua,0.9794,automático
+506,salud,salud,0.6486,revisión manual
+508,salud,salud,0.6288,revisión manual
+511,seguridad,seguridad,0.9434,automático
+515,salud,salud,0.735,automático
+519,salud,salud,0.8151,automático
+520,seguridad,seguridad,0.9757,automático
+526,salud,salud,0.6068,revisión manual
+527,salud,salud,0.5894,revisión manual
+531,limpieza,limpieza,0.8354,automático
+532,limpieza,limpieza,0.4686,revisión manual
+537,limpieza,limpieza,0.9512,automático
+539,limpieza,limpieza,0.8976,automático
+544,agua,agua,0.9633,automático
+550,limpieza,limpieza,0.8848,automático
+551,agua,agua,0.958,automático
+553,limpieza,limpieza,0.9417,automático
+555,limpieza,limpieza,0.9944,automático
+557,salud,salud,0.933,automático
+558,limpieza,limpieza,0.9659,automático
+565,salud,salud,0.9807,automático
+570,limpieza,limpieza,0.7624,automático
+578,agua,agua,0.9317,automático
+581,limpieza,limpieza,0.9058,automático
+584,agua,agua,0.91,automático
+587,agua,agua,0.9738,automático
+594,agua,agua,0.9841,automático
+599,limpieza,limpieza,0.9929,automático

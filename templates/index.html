@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Reclamos Ciudadanos</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f4f7f6; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h2 { color: #2c3e50; text-align: center; }
+        textarea { width: 100%; height: 120px; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; resize: vertical; }
+        button { width: 100%; padding: 12px; background-color: #0078D4; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: 0.3s; }
+        button:hover { background-color: #005a9e; }
+        #resultado { margin-top: 20px; padding: 15px; border-radius: 5px; display: none; }
+        .alerta { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+        .ok { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .resultado-item { margin-bottom: 10px; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Registro de Reclamo</h2>
+        <p>Ingresa el texto del reclamo ciudadano:</p>
+        <textarea id="textoReclamo" placeholder="Ej: hay una fuga de agua frente al colegio..."></textarea>
+        <button onclick="clasificar()">Analizar Reclamo</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        async function clasificar() {
+            const texto = document.getElementById('textoReclamo').value;
+            const divResultado = document.getElementById('resultado');
+            
+            if (!texto) {
+                alert("Por favor, ingresa un reclamo.");
+                return;
+            }
+
+            divResultado.style.display = 'block';
+            divResultado.className = '';
+            divResultado.style.background = '#e2e3e5';
+            divResultado.innerHTML = 'Analizando con Inteligencia Artificial...';
+
+            try {
+                // Se llama a NUESTRO backend, no directamente a Azure
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ texto: texto })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    const confianzaPorcentaje = (data.confianza * 100).toFixed(2);
+                    
+                    let html = `<div class="resultado-item"><strong>Categoría:</strong> ${data.categoria}</div>`;
+                    html += `<div class="resultado-item"><strong>Confianza:</strong> ${confianzaPorcentaje}%</div>`;
+
+                    // Validación del umbral (menor a 70% o si el estado ya lo indica)
+                    if (data.confianza < 0.70 || data.estado.toLowerCase().includes("revisión")) {
+                        divResultado.className = 'alerta';
+                        html += `<div class="resultado-item"><strong>⚠️ Requiere revisión manual</strong></div>`;
+                    } else {
+                        divResultado.className = 'ok';
+                        html += `<div class="resultado-item"><strong>✅ Clasificación automática exitosa</strong></div>`;
+                    }
+                    
+                    divResultado.innerHTML = html;
+                } else {
+                    divResultado.className = 'error';
+                    divResultado.innerHTML = `<p>Error: ${data.error}</p>`;
+                }
+            } catch (error) {
+                divResultado.className = 'error';
+                divResultado.innerHTML = `<p>Error de conexión con el servidor.</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
